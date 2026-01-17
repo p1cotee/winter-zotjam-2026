@@ -1,9 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StartMenuController : MonoBehaviour
 {
 	public void OnStartClick() {
-		SceneManager.LoadScene("IntroScene");
+		SceneManager.LoadScene("IntroComic");
 	}
 
 	public void OnExitClick() {

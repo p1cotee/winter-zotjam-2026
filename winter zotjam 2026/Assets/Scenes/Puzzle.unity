@@ -226,7 +226,7 @@ Transform:
   m_GameObject: {fileID: 36198428}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.47, y: -5.17, z: 0}
+  m_LocalPosition: {x: 2, y: -5.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -304,9 +304,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
   useBobbing: 1
   bobSpeed: 2
-  bobHeight: 0.2
-  bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  bobHeight: 5
+  bobWidth: 4
+  horizontalSpeedMult: 3
   targetPoint: {fileID: 2077401206}
   snapDistance: 2
 --- !u!212 &36198433
@@ -630,7 +630,7 @@ MonoBehaviour:
   bobSpeed: 2
   bobHeight: 0.2
   bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  horizontalSpeedMult: 0.9
   targetPoint: {fileID: 1260847915}
   snapDistance: 2
 --- !u!212 &41520493
@@ -815,7 +815,7 @@ MonoBehaviour:
   bobSpeed: 2
   bobHeight: 0.2
   bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  horizontalSpeedMult: 0.5
   targetPoint: {fileID: 1334271763}
   snapDistance: 2
 --- !u!212 &65602014
@@ -1058,7 +1058,7 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 0.3
+  bobWidth: 3
   horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1045330885}
   snapDistance: 2
@@ -1216,7 +1216,7 @@ MonoBehaviour:
   bobSpeed: 2
   bobHeight: 0.2
   bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  horizontalSpeedMult: 0.3
   targetPoint: {fileID: 1684412365}
   snapDistance: 2
 --- !u!212 &149947236
@@ -1367,7 +1367,7 @@ Transform:
   m_GameObject: {fileID: 159067009}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.2, y: 12.9, z: 0}
+  m_LocalPosition: {x: 17.1, y: 12.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1388,8 +1388,8 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  bobWidth: 8
+  horizontalSpeedMult: 3.6
   targetPoint: {fileID: 758541482}
   snapDistance: 2
 --- !u!114 &159067012
@@ -1706,7 +1706,7 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 4.5
   bobHeight: 2.6
-  bobWidth: 0.3
+  bobWidth: 6.6
   horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1492151310}
   snapDistance: 2
@@ -1830,7 +1830,7 @@ Transform:
   m_GameObject: {fileID: 373231327}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.3, y: -11, z: 0}
+  m_LocalPosition: {x: 17.5, y: -2.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1851,8 +1851,8 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  bobWidth: 4
+  horizontalSpeedMult: 4.3
   targetPoint: {fileID: 755657750}
   snapDistance: 2
 --- !u!114 &373231330
@@ -2046,7 +2046,7 @@ Transform:
   m_GameObject: {fileID: 397823738}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.4, y: -9.5, z: 0}
+  m_LocalPosition: {x: 30.2, y: -4.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2067,8 +2067,8 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  bobWidth: 6
+  horizontalSpeedMult: 4.8
   targetPoint: {fileID: 1963257156}
   snapDistance: 2
 --- !u!114 &397823741
@@ -2293,7 +2293,7 @@ Transform:
   m_GameObject: {fileID: 429101314}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.9, y: 12.8, z: 0}
+  m_LocalPosition: {x: 21, y: 4.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2326,8 +2326,8 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  bobWidth: 5
+  horizontalSpeedMult: 4
   targetPoint: {fileID: 510447736}
   snapDistance: 2
 --- !u!61 &429101318
@@ -2714,8 +2714,8 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  bobWidth: 7
+  horizontalSpeedMult: 4
   targetPoint: {fileID: 2142691843}
   snapDistance: 2
 --- !u!114 &507019680
@@ -3252,7 +3252,7 @@ Transform:
   m_GameObject: {fileID: 590728461}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.49, y: -4.47, z: 0}
+  m_LocalPosition: {x: -2.9799995, y: -4.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3329,10 +3329,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
   useBobbing: 1
-  bobSpeed: 2
-  bobHeight: 0.2
-  bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  bobSpeed: 5
+  bobHeight: 0.9
+  bobWidth: 5
+  horizontalSpeedMult: 2
   targetPoint: {fileID: 388909674}
   snapDistance: 2
 --- !u!212 &590728466
@@ -3499,7 +3499,7 @@ Transform:
   m_GameObject: {fileID: 613793994}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.04, y: -5.6, z: 0}
+  m_LocalPosition: {x: 9.570002, y: -5.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3577,9 +3577,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
   useBobbing: 1
   bobSpeed: 2
-  bobHeight: 0.2
-  bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  bobHeight: 4
+  bobWidth: 5
+  horizontalSpeedMult: 3
   targetPoint: {fileID: 404395715}
   snapDistance: 2
 --- !u!212 &613793999
@@ -3855,7 +3855,7 @@ MonoBehaviour:
   bobSpeed: 2
   bobHeight: 0.2
   bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  horizontalSpeedMult: 0.8
   targetPoint: {fileID: 1530690239}
   snapDistance: 2
 --- !u!212 &675780595
@@ -4225,7 +4225,7 @@ MonoBehaviour:
   bobSpeed: 2
   bobHeight: 0.2
   bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  horizontalSpeedMult: 0.4
   targetPoint: {fileID: 1547139189}
   snapDistance: 2
 --- !u!212 &685749513
@@ -4376,7 +4376,7 @@ Transform:
   m_GameObject: {fileID: 690801522}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.02, y: 4.03, z: 0}
+  m_LocalPosition: {x: 7.550001, y: 4.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4454,9 +4454,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
   useBobbing: 1
   bobSpeed: 2
-  bobHeight: 0.2
-  bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  bobHeight: 8
+  bobWidth: 5
+  horizontalSpeedMult: 3
   targetPoint: {fileID: 1531865925}
   snapDistance: 2
 --- !u!212 &690801527
@@ -4653,7 +4653,7 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 0.3
+  bobWidth: 4
   horizontalSpeedMult: 0.7
   targetPoint: {fileID: 592945569}
   snapDistance: 2
@@ -4794,7 +4794,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &758653095
 Transform:
   m_ObjectHideFlags: 0
@@ -4957,7 +4957,7 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 4
   bobHeight: 0.9
-  bobWidth: 0.3
+  bobWidth: 7
   horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1224391705}
   snapDistance: 2
@@ -5115,7 +5115,7 @@ MonoBehaviour:
   bobSpeed: 2
   bobHeight: 0.2
   bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  horizontalSpeedMult: 1
   targetPoint: {fileID: 453769562}
   snapDistance: 2
 --- !u!212 &845565906
@@ -5266,7 +5266,7 @@ Transform:
   m_GameObject: {fileID: 860528952}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.82, y: -0.86, z: 0}
+  m_LocalPosition: {x: 4.3500004, y: -0.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5344,9 +5344,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
   useBobbing: 1
   bobSpeed: 2
-  bobHeight: 0.2
-  bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  bobHeight: 9
+  bobWidth: 5
+  horizontalSpeedMult: 3
   targetPoint: {fileID: 498392669}
   snapDistance: 2
 --- !u!212 &860528957
@@ -5451,7 +5451,7 @@ Transform:
   m_GameObject: {fileID: 870008768}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.7, y: -10.6, z: 0}
+  m_LocalPosition: {x: 23.9, y: -2.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5472,8 +5472,8 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  bobWidth: 6
+  horizontalSpeedMult: 4.6
   targetPoint: {fileID: 1403176927}
   snapDistance: 2
 --- !u!114 &870008771
@@ -5667,7 +5667,7 @@ Transform:
   m_GameObject: {fileID: 970274628}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.08, y: 7.61, z: 0}
+  m_LocalPosition: {x: -5.3899994, y: 7.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5744,10 +5744,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
   useBobbing: 1
-  bobSpeed: 2
-  bobHeight: 0.2
-  bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  bobSpeed: 3
+  bobHeight: 4
+  bobWidth: 7
+  horizontalSpeedMult: 3
   targetPoint: {fileID: 1268048018}
   snapDistance: 2
 --- !u!212 &970274633
@@ -5852,7 +5852,7 @@ Transform:
   m_GameObject: {fileID: 1020974496}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.99, y: 7.63, z: 0}
+  m_LocalPosition: {x: 1.5200005, y: 7.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5929,10 +5929,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
   useBobbing: 1
-  bobSpeed: 2
-  bobHeight: 0.2
-  bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  bobSpeed: 0.8
+  bobHeight: 5
+  bobWidth: 4
+  horizontalSpeedMult: 3
   targetPoint: {fileID: 2016198195}
   snapDistance: 2
 --- !u!212 &1020974501
@@ -6384,7 +6384,7 @@ MonoBehaviour:
   bobSpeed: 2
   bobHeight: 0.2
   bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  horizontalSpeedMult: 0.5
   targetPoint: {fileID: 804916876}
   snapDistance: 2
 --- !u!212 &1138504825
@@ -6716,8 +6716,8 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  bobWidth: 5
+  horizontalSpeedMult: 4.5
   targetPoint: {fileID: 128019180}
   snapDistance: 2
 --- !u!114 &1187518653
@@ -7096,7 +7096,7 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 0.3
+  bobWidth: 7
   horizontalSpeedMult: 0.7
   targetPoint: {fileID: 416194025}
   snapDistance: 2
@@ -7189,7 +7189,7 @@ Transform:
   m_GameObject: {fileID: 1277329735}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.5, y: -11.2, z: 0}
+  m_LocalPosition: {x: 28.4, y: 5.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7210,8 +7210,8 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  bobWidth: 5
+  horizontalSpeedMult: 4
   targetPoint: {fileID: 466389339}
   snapDistance: 2
 --- !u!114 &1277329738
@@ -7544,7 +7544,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1439561553
 Transform:
   m_ObjectHideFlags: 0
@@ -7932,7 +7932,7 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 5
   bobHeight: 0.8
-  bobWidth: 0.3
+  bobWidth: 4
   horizontalSpeedMult: 0.7
   targetPoint: {fileID: 248675029}
   snapDistance: 2
@@ -8117,7 +8117,7 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 0.8
+  bobWidth: 6
   horizontalSpeedMult: 0.7
   targetPoint: {fileID: 253361408}
   snapDistance: 2
@@ -8308,7 +8308,7 @@ Transform:
   m_GameObject: {fileID: 1930101911}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.23, y: 8.54, z: 0}
+  m_LocalPosition: {x: 6.76, y: 8.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8374,9 +8374,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
   useBobbing: 1
   bobSpeed: 2
-  bobHeight: 0.2
-  bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  bobHeight: 8
+  bobWidth: 3
+  horizontalSpeedMult: 2
   targetPoint: {fileID: 29705630}
   snapDistance: 2
 --- !u!114 &1930101915
@@ -8493,7 +8493,7 @@ Transform:
   m_GameObject: {fileID: 1944250357}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.47, y: 2.08, z: 0}
+  m_LocalPosition: {x: -2, y: 2.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8570,9 +8570,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
   useBobbing: 1
-  bobSpeed: 2
-  bobHeight: 0.2
-  bobWidth: 0.3
+  bobSpeed: 0.9
+  bobHeight: 5
+  bobWidth: 4
   horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1343290176}
   snapDistance: 2
@@ -8774,7 +8774,7 @@ MonoBehaviour:
   bobSpeed: 2
   bobHeight: 0.2
   bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  horizontalSpeedMult: 0.9
   targetPoint: {fileID: 2090391189}
   snapDistance: 2
 --- !u!212 &1994629502
@@ -8925,7 +8925,7 @@ Transform:
   m_GameObject: {fileID: 2008297693}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5, y: 14, z: 0}
+  m_LocalPosition: {x: 25.7, y: 14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8946,8 +8946,8 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 0.3
-  horizontalSpeedMult: 0.7
+  bobWidth: 7
+  horizontalSpeedMult: 4
   targetPoint: {fileID: 606192542}
   snapDistance: 2
 --- !u!114 &2008297696
@@ -9331,7 +9331,7 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 5
   bobHeight: 0.4
-  bobWidth: 0.3
+  bobWidth: 6
   horizontalSpeedMult: 0.7
   targetPoint: {fileID: 487992963}
   snapDistance: 2
@@ -9547,7 +9547,7 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 0.3
+  bobWidth: 5
   horizontalSpeedMult: 0.7
   targetPoint: {fileID: 312379593}
   snapDistance: 2

@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags: []
   layers:
   - Default
@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - background
   - 
   - 
   - 
@@ -41,3 +41,11 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: crush
+    uniqueID: 2976045415
+    locked: 0
+  - name: puzzle pieces
+    uniqueID: 3280473909
+    locked: 0
+  m_RenderingLayers:
+  - Default

@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class IntroComicManager : MonoBehaviour
 {
@@ -102,6 +103,8 @@ public class IntroComicManager : MonoBehaviour
         yield return StartCoroutine(
             waitThenPan(scale3, 7, endPos9, 1)
         );
+
+        SceneManager.LoadScene("Classroom");
     }
 
     IEnumerator playAudio(AudioClip[] clips)

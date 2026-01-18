@@ -13,10 +13,14 @@ public class PuzzleContainer : MonoBehaviour
     public GameObject nextPuzzle;      // The next puzzle to load
     public float displayTime = 2.0f;   // How long to wait
 
+    [Header("Audio")]
+    public AudioClip mcYearning;
+    private AudioSource audioSource;
+
     void Awake() {
         allPieces = GetComponentsInChildren<PuzzlePiece>();
         puzzleManager = Object.FindFirstObjectByType<PuzzleManager>();
-        
+        audioSource = GetComponent<AudioSource>();
         // Ensure the completion image starts hidden
         if(completionImage != null) completionImage.SetActive(false);
     }
@@ -49,7 +53,20 @@ public class PuzzleContainer : MonoBehaviour
         yield return new WaitForSeconds(displayTime);
 
         // 4. Swap the puzzles
-        if (nextPuzzle != null) nextPuzzle.SetActive(true);
+        if (nextPuzzle != null)
+        {
+            nextPuzzle.SetActive(true);
+
+            // 🔊 PLAY SOUND HERE
+            if (mcYearning != null && audioSource != null)
+            {
+                Debug.Log("Trying to play next puzzle sound");
+                AudioSource.PlayClipAtPoint(
+                    mcYearning,
+                    Camera.main.transform.position
+                );
+            }
+        }
 
         if(nextPuzzle == null) yield return new WaitForSeconds(displayTime);
         

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Drawing;
 
 public class VFXSpawner : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class VFXSpawner : MonoBehaviour
 
     public GameObject shinyVFXPrefab;
     private GameObject shinyVFX;
+    public GameObject eyelid;
+
+    public bool blinkAnimation = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,10 +23,12 @@ public class VFXSpawner : MonoBehaviour
         currentTime = countTime;
         Player.Instance.OnBlink += DestroyAll;
         Player.Instance.OnBlink += PauseBubbles;
+        Player.Instance.OnBlink += PlayBlinkAnimation;
         bubble = Instantiate(bubbleVFXPrefab, new Vector3(0, -5, 0), Quaternion.identity);
         bubble.SetActive(true);
         shinyVFX = Instantiate(shinyVFXPrefab, new Vector3(0, -5, 0), Quaternion.identity);
         shinyVFX.SetActive(true);
+
    
     }
 
@@ -39,6 +45,8 @@ public class VFXSpawner : MonoBehaviour
             RandomSpawn();
             ResetTimer();
         }
+
+
 
     }
 
@@ -78,5 +86,54 @@ public class VFXSpawner : MonoBehaviour
         shinyVFX.SetActive(true);
     }
 
+    public void PlayBlinkAnimation()
+    {
+        
+        blinkAnimation = true;
+        
+    }
+
+    void LateUpdate()
+    {
+        if (blinkAnimation && UnityEngine.Vector3.Distance(eyelid.transform.position, new Vector3(0, 0, 0)) < 0.1f)
+            {
+                eyelid.transform.position = new Vector3(0, 12, 0);
+                blinkAnimation = false;
+                return;
+            }
+        //eyelid.transform.position = new Vector3(0, 10, 0);
+        
+        if (blinkAnimation)
+        {
+            BlinkAnimation();
+        }
+
+    }
+
+    private void BlinkAnimation()
+    {
+        eyelid.transform.position = UnityEngine.Vector3.Lerp(
+            eyelid.transform.position,
+            new Vector3(0, 0, 0),
+            5f * Time.deltaTime);
+    
+    }
+
+    /*
+    private void BlinkBackAnimation()
+    {
+        eyelid.transform.position = UnityEngine.Vector3.Lerp(
+            eyelid.transform.position,
+            new Vector3(0, 12, 0),
+            5f * Time.deltaTime);
+
+        if (UnityEngine.Vector3.Distance(eyelid.transform.position, new Vector3(0, 12, 0)) < 0.1f)
+        {
+            eyelid.transform.position = new Vector3(0, 12, 0);
+            blinkAnimation = false;
+        }
+    }
+    */
+    
 
 }

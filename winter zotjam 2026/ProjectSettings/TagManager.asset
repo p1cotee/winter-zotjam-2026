@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - VFX
+  - filter
   layers:
   - Default
   - TransparentFX

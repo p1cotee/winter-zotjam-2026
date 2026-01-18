@@ -50,6 +50,8 @@ public class PuzzleContainer : MonoBehaviour
 
         // 4. Swap the puzzles
         if (nextPuzzle != null) nextPuzzle.SetActive(true);
+
+        if(nextPuzzle == null) yield return new WaitForSeconds(displayTime);
         
         // Disable this current puzzle object
         completionImage.SetActive(false);

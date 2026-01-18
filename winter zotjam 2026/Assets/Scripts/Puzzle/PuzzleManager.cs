@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PuzzleManager : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class PuzzleManager : MonoBehaviour
         if (puzzlesFinished >= totalPuzzles) {
             // FINALLY, notify the Game Manager
             Debug.Log("Notify Game Manager");
+    		SceneManager.LoadScene("EndScene");
+
             //GameManager.Instance.HandleAllPuzzlesClear();
         }
     }

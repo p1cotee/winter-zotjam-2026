@@ -8,6 +8,7 @@ public class IntroComicManager : MonoBehaviour
     public AudioClip[] lines;
     private AudioSource audioSource;
     
+    
     void Start()
     {
         audioSource = GetComponent<AudioSource>();

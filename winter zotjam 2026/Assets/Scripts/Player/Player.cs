@@ -8,11 +8,14 @@ public class Player : MonoBehaviour
     [SerializeField] private UnityEngine.Vector3 _cameraTransformDown;
     [SerializeField] private float _cameraMoveSpeed = 5f;
 
+
     public bool IsDown = false;
     public bool LookCenter = true;
     public bool MoveDown = false;
+    public bool IsBlinking = false;
 
-    
+    public delegate void EmptyDelegate();//this is the delegate
+    public event EmptyDelegate OnBlink; //this is the blink event
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -44,12 +47,6 @@ public class Player : MonoBehaviour
 
             }
             */
-
-            //blink
-            if (Input.GetKeyDown(KeyCode.Space)||Input.GetMouseButtonDown(0))
-            {
-                Blink();
-            }
         }
 
         if (IsDown) //can look back up; cant look left or right (strech goal)
@@ -64,6 +61,19 @@ public class Player : MonoBehaviour
 
                 MoveDown = false;
             }
+        }
+
+        //blink when press space
+        
+    }
+
+    void Update()//okay unity i actually hate you for this
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && !IsBlinking)
+        {
+            IsBlinking = true;
+            Blink();
+
         }
     }
 
@@ -107,14 +117,20 @@ public class Player : MonoBehaviour
             target, 
             _cameraMoveSpeed * Time.deltaTime);
     }
-
+    
     public void Blink() //make it an event
     {
         //reset the timer
         //clear the blur filter
         //plus 1 to the blink counter
         //play blink sfx
-        //play blink animation
+        //play blink animation?
+
+        OnBlink?.Invoke(); //fire the blink event, if there are any subscribers
+        IsBlinking = false;
         Debug.Log("blinked");
     }
+
+    //test function for subscribing to the blink event
+    
 }

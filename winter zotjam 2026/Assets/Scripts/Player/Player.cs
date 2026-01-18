@@ -26,10 +26,11 @@ public class Player : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.S))
             {
                 IsDown = true;
-                LookCenter = true;
+                LookCenter = false;
                 Debug.Log("is looking down");
 
                 _camera.transform.position = _cameraTransformDown;
+                Debug.Log(_camera.transform.position);
 
 
             }

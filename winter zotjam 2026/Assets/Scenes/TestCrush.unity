@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 1501047882}
   - component: {fileID: 1501047881}
   - component: {fileID: 1501047883}
+  - component: {fileID: 1501047884}
   m_Layer: 0
   m_Name: crush
   m_TagString: Untagged
@@ -227,6 +228,18 @@ MonoBehaviour:
   crushLookingAtPlayer: {fileID: 1170494033903795192, guid: 7d1fa3b52eef15142a1b74c184f5af1f, type: 3}
   crush: {fileID: 1501047880}
   waitTime: 0
+--- !u!114 &1501047884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501047880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acfa77312fc704393a54c7366f1451e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1001 &1610289942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -294,7 +307,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1944486514}
   - component: {fileID: 1944486513}
-  - component: {fileID: 1944486512}
   - component: {fileID: 1944486515}
   m_Layer: 0
   m_Name: Main Camera
@@ -303,14 +315,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1944486512
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1944486511}
-  m_Enabled: 1
 --- !u!20 &1944486513
 Camera:
   m_ObjectHideFlags: 0

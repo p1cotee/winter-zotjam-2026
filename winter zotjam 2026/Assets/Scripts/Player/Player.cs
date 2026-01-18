@@ -187,6 +187,7 @@ public class Player : MonoBehaviour
             PlayerHP -= 1;
             _caughtSfx.Play();
             Debug.Log("Player got caught! Remaining HP: " + PlayerHP);
+            HealthUI.Instance.UpdateHealth(PlayerHP);
         }
 
         else

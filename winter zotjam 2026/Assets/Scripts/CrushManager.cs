@@ -47,7 +47,7 @@ public class CrushManager : MonoBehaviour
             }
             
             yield return new WaitForSeconds(waitTime);
-
+            
             sr.sprite = crushLookingAtPlayer;
             isLookingAtPlayer = true;
             Player.Instance.GotCaught(isLookingAtPlayer);

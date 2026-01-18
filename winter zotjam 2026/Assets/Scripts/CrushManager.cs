@@ -11,6 +11,8 @@ public class CrushManager : MonoBehaviour
     SpriteRenderer sr;
     public float waitTime;
 
+    
+
     void Awake()
     {
         sr = crush.GetComponent<SpriteRenderer>();
@@ -20,11 +22,29 @@ public class CrushManager : MonoBehaviour
     {
         StartCoroutine(randomTurnArounds());
     }
-    
+
+    void Update()
+    {
+        if(Player.Instance != null)
+        {
+            int totalBlinks = Player.Instance.blinkCount;
+        }
+    }
+
     IEnumerator randomTurnArounds()
     {
         while (true){
-            waitTime = Random.Range(1f, 5f);
+            
+            waitTime = Random.Range(15f, 20f);
+            if(Player.Instance.blinkCount > 5 && Player.Instance.blinkCount < 10)
+            {
+                waitTime = Random.Range(10f, 15f); //faster waittime
+            }
+            else if(Player.Instance.blinkCount > 10)
+            {
+                waitTime = Random.Range(5f, 10f);
+            }
+            
             yield return new WaitForSeconds(waitTime);
 
             sr.sprite = crushLookingAtPlayer;

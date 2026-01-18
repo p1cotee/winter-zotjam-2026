@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     public static Player Instance {get; private set;} //make player as a singleton
     public delegate void EmptyDelegate();//this is the delegate
     public event EmptyDelegate OnBlink; //this is the blink event
+
+    public int blinkCount = 0;
     
     void Awake()//null check for singleto
     {
@@ -143,9 +145,10 @@ public class Player : MonoBehaviour
         //play blink sfx
         //play blink animation?
 
+        blinkCount++;
         OnBlink?.Invoke(); //fire the blink event, if there are any subscribers
         IsBlinking = false;
-        Debug.Log("blinked");
+        Debug.Log("blinked, total blink count: " + blinkCount);
     }
 
     //test function for subscribing to the blink event

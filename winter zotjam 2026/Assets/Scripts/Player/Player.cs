@@ -6,9 +6,11 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject _camera;
     [SerializeField] private Transform _cameraTransformCenter;
     [SerializeField] private UnityEngine.Vector3 _cameraTransformDown;
+    [SerializeField] private float _cameraMoveSpeed = 5f;
 
     public bool IsDown = false;
     public bool LookCenter = true;
+    public bool MoveDown = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,10 +20,10 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //camera movement
-        if (!IsDown) //can look down or look left or right
+        if (!IsDown) //can look down 
         {
             if (Input.GetKeyDown(KeyCode.S))
             {
@@ -29,15 +31,16 @@ public class Player : MonoBehaviour
                 LookCenter = false;
                 Debug.Log("is looking down");
 
-                _camera.transform.position = _cameraTransformDown;
+                MoveDown = true;
+
                 Debug.Log(_camera.transform.position);
 
 
             }
-            //strech goal
+            //strech goal, left and right look
             if (Input.GetKeyDown(KeyCode.A))
             {
-                
+
             }
         }
 
@@ -46,12 +49,59 @@ public class Player : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.W))//looking up
             {
                 IsDown = false;
+                LookCenter = true;
                 Debug.Log("is looking up");
 
-                _camera.transform.position = _cameraTransformCenter.position;
+                //_camera.transform.position = _cameraTransformCenter.position;
+
+                MoveDown = false;
             }
         }
         
+        
 
+    }
+
+    void LateUpdate()
+    {
+        if (MoveDown == true)
+        {
+            if (UnityEngine.Vector3.Distance(_camera.transform.position, _cameraTransformDown) < 0.1f)
+            {
+                _camera.transform.position = _cameraTransformDown;
+
+                return;
+            }
+            else
+            {
+                CameraMovement(_camera.transform.position, _cameraTransformDown);
+            }
+            
+        }
+
+        if (MoveDown == false)
+        {
+            if (UnityEngine.Vector3.Distance(_camera.transform.position, _cameraTransformCenter.position) < 0.1f)
+            {
+                _camera.transform.position = _cameraTransformCenter.position;
+
+                return;
+            }
+            else
+            {
+                CameraMovement(_camera.transform.position, _cameraTransformCenter.position);
+            }
+        }
+         
+
+    }
+
+    //camera movement lerp function 
+    private void CameraMovement(UnityEngine.Vector3 original, UnityEngine.Vector3 target)
+    {
+        _camera.transform.position = UnityEngine.Vector3.Lerp(
+            original, 
+            target, 
+            _cameraMoveSpeed * Time.deltaTime);
     }
 }

@@ -190,7 +190,7 @@ Transform:
   m_GameObject: {fileID: 29705629}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.77313, y: 5.50735, z: 0}
+  m_LocalPosition: {x: 5.87, y: 5.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -226,7 +226,7 @@ Transform:
   m_GameObject: {fileID: 36198428}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.4, y: 7.1, z: 0}
+  m_LocalPosition: {x: 22.47, y: -5.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -302,6 +302,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 2077401206}
   snapDistance: 2
 --- !u!212 &36198433
@@ -444,7 +449,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 5907156211901752560, guid: 6d331b8eb7e81b444bde9eb9c2393430, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -541,8 +546,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 2009055889}
-  snapDistance: 3
+  snapDistance: 2
 --- !u!114 &40313891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -616,6 +626,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1260847915}
   snapDistance: 2
 --- !u!212 &41520493
@@ -796,6 +811,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1334271763}
   snapDistance: 2
 --- !u!212 &65602014
@@ -1035,6 +1055,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1045330885}
   snapDistance: 2
 --- !u!212 &101348854
@@ -1187,6 +1212,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1684412365}
   snapDistance: 2
 --- !u!212 &149947236
@@ -1355,6 +1385,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 758541482}
   snapDistance: 2
 --- !u!114 &159067012
@@ -1579,7 +1614,7 @@ Transform:
   m_GameObject: {fileID: 278668253}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.473131, y: 12.50735, z: 0}
+  m_LocalPosition: {x: 29.38, y: 3.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1668,6 +1703,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 4.5
+  bobHeight: 2.6
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1492151310}
   snapDistance: 2
 --- !u!212 &278668259
@@ -1808,6 +1848,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 755657750}
   snapDistance: 2
 --- !u!114 &373231330
@@ -1965,7 +2010,7 @@ Transform:
   m_GameObject: {fileID: 388909673}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.3731298, y: 2.10735, z: 0}
+  m_LocalPosition: {x: 2.24, y: 1.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2019,6 +2064,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1963257156}
   snapDistance: 2
 --- !u!114 &397823741
@@ -2176,7 +2226,7 @@ Transform:
   m_GameObject: {fileID: 404395714}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3768702, y: 5.55735, z: 0}
+  m_LocalPosition: {x: -1, y: 5.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2273,6 +2323,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 510447736}
   snapDistance: 2
 --- !u!61 &429101318
@@ -2457,7 +2512,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -99
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.93710685, g: 0.8103911, b: 0.93543524, a: 1}
@@ -2602,7 +2657,7 @@ Transform:
   m_GameObject: {fileID: 498392668}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.87313, y: -1.57265, z: 0}
+  m_LocalPosition: {x: 5.93, y: -1.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2656,6 +2711,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 2142691843}
   snapDistance: 2
 --- !u!114 &507019680
@@ -2946,6 +3006,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1100230960}
   snapDistance: 2
 --- !u!212 &539257480
@@ -3187,7 +3252,7 @@ Transform:
   m_GameObject: {fileID: 590728461}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25, y: 1.8, z: 0}
+  m_LocalPosition: {x: 17.49, y: -4.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3263,6 +3328,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 388909674}
   snapDistance: 2
 --- !u!212 &590728466
@@ -3429,7 +3499,7 @@ Transform:
   m_GameObject: {fileID: 613793994}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.1, y: 12, z: 0}
+  m_LocalPosition: {x: 30.04, y: -5.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3505,6 +3575,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 404395715}
   snapDistance: 2
 --- !u!212 &613793999
@@ -3776,6 +3851,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1530690239}
   snapDistance: 2
 --- !u!212 &675780595
@@ -3964,7 +4044,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6749826327843803120, guid: 68c892d2d2c54af459f92d8a8a28fd02, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4061,8 +4141,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 929438579}
-  snapDistance: 3.06
+  snapDistance: 2
 --- !u!114 &678972610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4136,6 +4221,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1547139189}
   snapDistance: 2
 --- !u!212 &685749513
@@ -4286,7 +4376,7 @@ Transform:
   m_GameObject: {fileID: 690801522}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.4, y: -5.8, z: 0}
+  m_LocalPosition: {x: 28.02, y: 4.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4362,6 +4452,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1531865925}
   snapDistance: 2
 --- !u!212 &690801527
@@ -4555,6 +4650,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 592945569}
   snapDistance: 2
 --- !u!212 &698454650
@@ -4765,7 +4865,7 @@ Transform:
   m_GameObject: {fileID: 780544472}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.07313, y: -6.0926495, z: 0}
+  m_LocalPosition: {x: 30.31, y: -6.0926495, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4854,6 +4954,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 4
+  bobHeight: 0.9
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1224391705}
   snapDistance: 2
 --- !u!212 &780544478
@@ -5006,6 +5111,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 453769562}
   snapDistance: 2
 --- !u!212 &845565906
@@ -5156,7 +5266,7 @@ Transform:
   m_GameObject: {fileID: 860528952}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.2, y: 2.5, z: 0}
+  m_LocalPosition: {x: 24.82, y: -0.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5232,6 +5342,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 498392669}
   snapDistance: 2
 --- !u!212 &860528957
@@ -5354,6 +5469,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1403176927}
   snapDistance: 2
 --- !u!114 &870008771
@@ -5547,7 +5667,7 @@ Transform:
   m_GameObject: {fileID: 970274628}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16, y: 10.4, z: 0}
+  m_LocalPosition: {x: 15.08, y: 7.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5623,6 +5743,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1268048018}
   snapDistance: 2
 --- !u!212 &970274633
@@ -5727,7 +5852,7 @@ Transform:
   m_GameObject: {fileID: 1020974496}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.6, y: -3.4, z: 0}
+  m_LocalPosition: {x: 21.99, y: 7.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5803,6 +5928,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 2016198195}
   snapDistance: 2
 --- !u!212 &1020974501
@@ -5976,7 +6106,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8522082769796637044, guid: ea9a66b8c6e0df945a8546ca6a88549d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6048,8 +6178,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1990613043}
-  snapDistance: 3
+  snapDistance: 2
 --- !u!114 &1098825199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6245,6 +6380,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 804916876}
   snapDistance: 2
 --- !u!212 &1138504825
@@ -6433,7 +6573,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 264148888143960838, guid: 784969fcd55227140b46f93766e88665, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6505,8 +6645,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1214012721}
-  snapDistance: 3
+  snapDistance: 2
 --- !u!114 &1187287877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6568,6 +6713,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 128019180}
   snapDistance: 2
 --- !u!114 &1187518653
@@ -6818,7 +6968,7 @@ Transform:
   m_GameObject: {fileID: 1268048017}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.02313, y: 5.50735, z: 0}
+  m_LocalPosition: {x: 2.46, y: 4.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6854,7 +7004,7 @@ Transform:
   m_GameObject: {fileID: 1272430254}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.106869, y: 1.4773501, z: 0}
+  m_LocalPosition: {x: 21.64, y: 1.4773501, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6943,6 +7093,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 416194025}
   snapDistance: 2
 --- !u!212 &1272430260
@@ -7052,6 +7207,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 466389339}
   snapDistance: 2
 --- !u!114 &1277329738
@@ -7240,7 +7400,7 @@ Transform:
   m_GameObject: {fileID: 1343290175}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4268699, y: -1.4526498, z: 0}
+  m_LocalPosition: {x: -0.96, y: -1.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7613,7 +7773,7 @@ Transform:
   m_GameObject: {fileID: 1531865924}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0268703, y: 2.10735, z: 0}
+  m_LocalPosition: {x: -1.01, y: 1.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7680,7 +7840,7 @@ Transform:
   m_GameObject: {fileID: 1548359654}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9268701, y: -6.19265, z: 0}
+  m_LocalPosition: {x: 19.31, y: -6.19265, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7769,6 +7929,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 5
+  bobHeight: 0.8
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 248675029}
   snapDistance: 2
 --- !u!212 &1548359660
@@ -7860,7 +8025,7 @@ Transform:
   m_GameObject: {fileID: 1601534752}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.376869, y: -3.7026498, z: 0}
+  m_LocalPosition: {x: 24.81, y: -3.7026498, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7949,6 +8114,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.8
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 253361408}
   snapDistance: 2
 --- !u!212 &1601534758
@@ -8138,7 +8308,7 @@ Transform:
   m_GameObject: {fileID: 1930101911}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.4, y: 7.5, z: 0}
+  m_LocalPosition: {x: 27.23, y: 8.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8202,6 +8372,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 29705630}
   snapDistance: 2
 --- !u!114 &1930101915
@@ -8318,7 +8493,7 @@ Transform:
   m_GameObject: {fileID: 1944250357}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.8, y: -5.2, z: 0}
+  m_LocalPosition: {x: 18.47, y: 2.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8394,6 +8569,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1343290176}
   snapDistance: 2
 --- !u!212 &1944250362
@@ -8590,6 +8770,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 2090391189}
   snapDistance: 2
 --- !u!212 &1994629502
@@ -8758,6 +8943,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 606192542}
   snapDistance: 2
 --- !u!114 &2008297696
@@ -8946,7 +9136,7 @@ Transform:
   m_GameObject: {fileID: 2016198194}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.97313, y: -1.6226499, z: 0}
+  m_LocalPosition: {x: 2.52, y: -1.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9049,7 +9239,7 @@ Transform:
   m_GameObject: {fileID: 2036145193}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.09687, y: 7.83735, z: 0}
+  m_LocalPosition: {x: 23.52, y: 7.83735, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9138,6 +9328,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 5
+  bobHeight: 0.4
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 487992963}
   snapDistance: 2
 --- !u!212 &2036145199
@@ -9224,7 +9419,7 @@ Transform:
   m_GameObject: {fileID: 2077401205}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.0731297, y: 1.8573501, z: 0}
+  m_LocalPosition: {x: 5.9, y: 1.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9349,6 +9544,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e2fb9bdab316d40b254ecc7886ae05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
+  useBobbing: 1
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 0.3
+  horizontalSpeedMult: 0.7
   targetPoint: {fileID: 312379593}
   snapDistance: 2
 --- !u!212 &2085735937

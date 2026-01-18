@@ -369,9 +369,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
   snapSound: {fileID: 8300000, guid: 4b88fb5626ef49846ab69c83e592eb6b, type: 3}
   useBobbing: 1
-  bobSpeed: 5
-  bobHeight: 0.4
-  bobWidth: 6
+  bobSpeed: 3
+  bobHeight: 3
+  bobWidth: 2
   horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1957274455}
   snapDistance: 2
@@ -1284,7 +1284,7 @@ MonoBehaviour:
   snapSound: {fileID: 8300000, guid: 4b88fb5626ef49846ab69c83e592eb6b, type: 3}
   useBobbing: 1
   bobSpeed: 0.8
-  bobHeight: 5
+  bobHeight: 4
   bobWidth: 4
   horizontalSpeedMult: 3
   targetPoint: {fileID: 1642356111}
@@ -1917,7 +1917,7 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 8
+  bobWidth: 4
   horizontalSpeedMult: 3.6
   targetPoint: {fileID: 1916963778}
   snapDistance: 2
@@ -5354,7 +5354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
   snapSound: {fileID: 8300000, guid: 4b88fb5626ef49846ab69c83e592eb6b, type: 3}
   useBobbing: 1
-  bobSpeed: 5
+  bobSpeed: -1.83
   bobHeight: 0.9
   bobWidth: 5
   horizontalSpeedMult: 2
@@ -5481,7 +5481,7 @@ Transform:
   m_GameObject: {fileID: 649866267}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 33.05, y: -3.13, z: 0}
+  m_LocalPosition: {x: 28.51, y: 8.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5671,7 +5671,7 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 7
+  bobWidth: 4
   horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1564279484}
   snapDistance: 2
@@ -6107,7 +6107,7 @@ MonoBehaviour:
   snapSound: {fileID: 8300000, guid: 4b88fb5626ef49846ab69c83e592eb6b, type: 3}
   useBobbing: 1
   bobSpeed: 2
-  bobHeight: 4
+  bobHeight: 3
   bobWidth: 5
   horizontalSpeedMult: 3
   targetPoint: {fileID: 1552575069}
@@ -6774,7 +6774,7 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 7
+  bobWidth: 5
   horizontalSpeedMult: 4
   targetPoint: {fileID: 1520198534}
   snapDistance: 2
@@ -7994,7 +7994,7 @@ Transform:
   m_GameObject: {fileID: 1101988333}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.41, y: 4.58, z: 0}
+  m_LocalPosition: {x: 14.14, y: -0.94, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8183,7 +8183,7 @@ MonoBehaviour:
   snapSound: {fileID: 8300000, guid: 4b88fb5626ef49846ab69c83e592eb6b, type: 3}
   useBobbing: 1
   bobSpeed: 2
-  bobHeight: 0.2
+  bobHeight: 0.5
   bobWidth: 5
   horizontalSpeedMult: 0.7
   targetPoint: {fileID: 884590826}
@@ -8843,8 +8843,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
   snapSound: {fileID: 8300000, guid: 4b88fb5626ef49846ab69c83e592eb6b, type: 3}
   useBobbing: 1
-  bobSpeed: 2
-  bobHeight: 9
+  bobSpeed: -1.7
+  bobHeight: 5
   bobWidth: 5
   horizontalSpeedMult: 3
   targetPoint: {fileID: 2046649822}
@@ -9160,8 +9160,8 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 5
   bobHeight: 0.8
-  bobWidth: 4
-  horizontalSpeedMult: 0.7
+  bobWidth: 3
+  horizontalSpeedMult: 0.2
   targetPoint: {fileID: 636928264}
   snapDistance: 2
 --- !u!212 &1269345194
@@ -9386,7 +9386,7 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 7
+  bobWidth: 2
   horizontalSpeedMult: 4
   targetPoint: {fileID: 1591269}
   snapDistance: 2
@@ -10016,7 +10016,7 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 5
+  bobWidth: 3
   horizontalSpeedMult: 4.5
   targetPoint: {fileID: 1274759537}
   snapDistance: 2
@@ -10356,8 +10356,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
   snapSound: {fileID: 8300000, guid: 4b88fb5626ef49846ab69c83e592eb6b, type: 3}
   useBobbing: 1
-  bobSpeed: 2
-  bobHeight: 8
+  bobSpeed: 0.59
+  bobHeight: 4
   bobWidth: 5
   horizontalSpeedMult: 3
   targetPoint: {fileID: 1216130692}
@@ -10605,7 +10605,7 @@ Transform:
   m_GameObject: {fileID: 1444133722}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 33.93, y: 2.7, z: 0}
+  m_LocalPosition: {x: 17.33, y: 4.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10794,7 +10794,7 @@ MonoBehaviour:
   snapSound: {fileID: 8300000, guid: 4b88fb5626ef49846ab69c83e592eb6b, type: 3}
   useBobbing: 1
   bobSpeed: 2
-  bobHeight: 0.2
+  bobHeight: 1
   bobWidth: 4
   horizontalSpeedMult: 0.7
   targetPoint: {fileID: 683346486}
@@ -11713,7 +11713,7 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 6
+  bobWidth: 5
   horizontalSpeedMult: 4.6
   targetPoint: {fileID: 1034616177}
   snapDistance: 2
@@ -12151,7 +12151,7 @@ MonoBehaviour:
   bobSpeed: 2
   bobHeight: 0.2
   bobWidth: 5
-  horizontalSpeedMult: 4
+  horizontalSpeedMult: 3
   targetPoint: {fileID: 2135927367}
   snapDistance: 2
 --- !u!114 &1656714139
@@ -12446,7 +12446,7 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 5
+  bobWidth: 3
   horizontalSpeedMult: 4
   targetPoint: {fileID: 47787570}
   snapDistance: 2
@@ -13047,7 +13047,7 @@ MonoBehaviour:
   snapSound: {fileID: 8300000, guid: 4b88fb5626ef49846ab69c83e592eb6b, type: 3}
   useBobbing: 1
   bobSpeed: 2
-  bobHeight: 8
+  bobHeight: 5
   bobWidth: 3
   horizontalSpeedMult: 2
   targetPoint: {fileID: 1650883315}
@@ -13545,7 +13545,7 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 6
+  bobWidth: 4
   horizontalSpeedMult: 4.8
   targetPoint: {fileID: 15963581}
   snapDistance: 2
@@ -14071,7 +14071,7 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 4
   bobHeight: 0.9
-  bobWidth: 7
+  bobWidth: 4
   horizontalSpeedMult: 0.7
   targetPoint: {fileID: 858969060}
   snapDistance: 2
@@ -14287,7 +14287,7 @@ Transform:
   m_GameObject: {fileID: 1957883162}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.39, y: 8.25, z: 0}
+  m_LocalPosition: {x: 16.74, y: 9.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14475,9 +14475,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SnapToTarget
   snapSound: {fileID: 8300000, guid: 4b88fb5626ef49846ab69c83e592eb6b, type: 3}
   useBobbing: 1
-  bobSpeed: 4.5
-  bobHeight: 2.6
-  bobWidth: 6.6
+  bobSpeed: 2
+  bobHeight: 0.2
+  bobWidth: 5
   horizontalSpeedMult: 0.7
   targetPoint: {fileID: 1104306640}
   snapDistance: 2
@@ -14703,7 +14703,7 @@ MonoBehaviour:
   useBobbing: 1
   bobSpeed: 2
   bobHeight: 0.2
-  bobWidth: 4
+  bobWidth: 2
   horizontalSpeedMult: 4.3
   targetPoint: {fileID: 475688871}
   snapDistance: 2
@@ -15212,7 +15212,7 @@ MonoBehaviour:
   snapSound: {fileID: 8300000, guid: 4b88fb5626ef49846ab69c83e592eb6b, type: 3}
   useBobbing: 1
   bobSpeed: 2
-  bobHeight: 5
+  bobHeight: 3
   bobWidth: 4
   horizontalSpeedMult: 3
   targetPoint: {fileID: 497132176}

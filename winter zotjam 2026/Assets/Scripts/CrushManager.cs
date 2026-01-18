@@ -9,6 +9,7 @@ public class CrushManager : MonoBehaviour
     public Sprite crushLookingAtPlayer;
     public GameObject crush;
     SpriteRenderer sr;
+    public float waitTime;
 
     void Awake()
     {
@@ -23,7 +24,7 @@ public class CrushManager : MonoBehaviour
     IEnumerator randomTurnArounds()
     {
         while (true){
-            float waitTime = Random.Range(1f, 5f);
+            waitTime = Random.Range(1f, 5f);
             yield return new WaitForSeconds(waitTime);
 
             sr.sprite = crushLookingAtPlayer;

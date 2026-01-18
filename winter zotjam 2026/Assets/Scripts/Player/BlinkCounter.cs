@@ -3,16 +3,22 @@ using UnityEngine;
 public class BlinkCounter : MonoBehaviour
 {
     public int blinkCount = 0;
-    public Player player;
+    private Player _player => Player.Instance; //makes the singleton call shorter i guess
 
-    public void OnEnable()
+    void Start()
     {
-        player.OnBlink += BlinkCount;
+        if (Player.Instance == null) return;
+        _player.OnBlink += BlinkCount;
+        
+    }
+    public void OnEnable()//dont use this
+    {
+        
     }
 
     public void OnDisable()
     {
-        player.OnBlink -= BlinkCount;
+        _player.OnBlink -= BlinkCount;
     }
 
     private void BlinkCount()

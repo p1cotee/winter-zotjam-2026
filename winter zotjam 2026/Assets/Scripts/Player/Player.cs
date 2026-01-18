@@ -14,8 +14,25 @@ public class Player : MonoBehaviour
     public bool MoveDown = false;
     public bool IsBlinking = false;
 
+    public static Player Instance {get; private set;} //make player as a singleton
     public delegate void EmptyDelegate();//this is the delegate
     public event EmptyDelegate OnBlink; //this is the blink event
+    
+    void Awake()//null check for singleto
+    {
+        //making a singleton
+        if (Instance != null && Instance != this)
+        {
+            // this is not the first singletone so it should be destoryed
+            Destroy(this);
+            return;
+        }
+
+        // make a singleton
+        Instance = this;
+        Debug.Log("Player singleton initialized");
+    }
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

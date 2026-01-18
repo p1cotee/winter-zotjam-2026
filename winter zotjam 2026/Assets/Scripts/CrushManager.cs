@@ -10,6 +10,7 @@ public class CrushManager : MonoBehaviour
     public GameObject crush;
     SpriteRenderer sr;
     public float waitTime;
+    public bool isLookingAtPlayer = false;
 
     
 
@@ -48,9 +49,12 @@ public class CrushManager : MonoBehaviour
             yield return new WaitForSeconds(waitTime);
 
             sr.sprite = crushLookingAtPlayer;
+            isLookingAtPlayer = true;
+            Player.Instance.GotCaught(isLookingAtPlayer);
 
             yield return new WaitForSeconds(3f);
             sr.sprite = crushLookingAway;
+            isLookingAtPlayer = false;
         }
     }
 }

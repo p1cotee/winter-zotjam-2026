@@ -9,6 +9,10 @@ public class Player : MonoBehaviour
     [SerializeField] private UnityEngine.Vector3 _cameraTransformDown;
     [SerializeField] private float _cameraMoveSpeed = 5f;
     [SerializeField] private float _blinkCoolDown = 2f;
+    [SerializeField] private AudioSource _headTurnSfx; //head turn sfx
+    [SerializeField] private AudioSource _blinkSfx; //blink sfx
+    [SerializeField] private AudioSource _caughtSfx; //caught sfx
+    [SerializeField] private CrushManager crushManager;
 
 
     public bool IsDown = false;
@@ -16,12 +20,14 @@ public class Player : MonoBehaviour
     public bool MoveDown = false;
     public bool IsBlinking = false;
     private bool _blinkIsCooling = false;
+    
 
     public static Player Instance {get; private set;} //make player as a singleton
     public delegate void EmptyDelegate();//this is the delegate
     public event EmptyDelegate OnBlink; //this is the blink event
 
     public int blinkCount = 0;
+    public int PlayerHP = 2; //total hp
     
     void Awake()//null check for singleto
     {
@@ -85,11 +91,10 @@ public class Player : MonoBehaviour
             }
         }
 
-        //blink when press space
         
     }
 
-    void Update()//okay unity i actually hate you for this
+    void Update()//okay unity i actually hate you for this; blink when press space
     {
         if (Input.GetKeyDown(KeyCode.Space) && !IsBlinking && !_blinkIsCooling)
         {
@@ -121,7 +126,9 @@ public class Player : MonoBehaviour
             }
             else
             {
+                PlayHeadTurnSfx();
                 CameraMovement(_camera.transform.position, _cameraTransformDown);
+                
             } 
         }
 
@@ -135,7 +142,9 @@ public class Player : MonoBehaviour
             }
             else
             {
+                PlayHeadTurnSfx();
                 CameraMovement(_camera.transform.position, _cameraTransformCenter.position);
+                
             }
         }
     }
@@ -159,10 +168,32 @@ public class Player : MonoBehaviour
 
         blinkCount++;
         OnBlink?.Invoke(); //fire the blink event, if there are any subscribers
+        _blinkSfx.Play();
         IsBlinking = false;
         Debug.Log("blinked, total blink count: " + blinkCount);
     }
 
-    //test function for subscribing to the blink event
-    
+    private void PlayHeadTurnSfx()
+    {
+        _headTurnSfx.Play();
+    }
+
+    public void GotCaught(bool isLookingAtPlayer) //got caught looking
+    {
+        //hp -1
+        //play caught sfx
+        if (isLookingAtPlayer && LookCenter) //crush is looking back, and player didnt look away
+        {
+            PlayerHP -= 1;
+            _caughtSfx.Play();
+            Debug.Log("Player got caught! Remaining HP: " + PlayerHP);
+        }
+
+        else
+        {
+            return;
+        }
+        
+
+    }
 }

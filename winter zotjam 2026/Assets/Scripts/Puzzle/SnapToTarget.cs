@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class SnapToTarget : MonoBehaviour
 {
+    [Header("Audio")]
+    public AudioClip snapSound;
+    private AudioSource audioSource;
+
     [Header("Bobbing Settings")]
     public bool useBobbing = true;
     public float bobSpeed = 2f;    // How fast it moves up and down
@@ -23,6 +27,8 @@ public class SnapToTarget : MonoBehaviour
     void Start() {
         puzzlePiece = GetComponent<PuzzlePiece>();
         startPos = transform.position;
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -60,6 +66,10 @@ public class SnapToTarget : MonoBehaviour
                 puzzlePiece.SnapIntoPlace();
             }
             Debug.Log("SNAPPED");
+            if (snapSound != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(snapSound);
+            }
             return; 
         }
     }

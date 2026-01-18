@@ -104,7 +104,7 @@ public class IntroComicManager : MonoBehaviour
             waitThenPan(scale3, 7, endPos9, 1)
         );
 
-        SceneManager.LoadScene("Classroom");
+        SceneManager.LoadScene("Tutorial");
     }
 
     IEnumerator playAudio(AudioClip[] clips)

@@ -26,7 +26,7 @@ public class PuzzleManager : MonoBehaviour
         if (puzzlesFinished >= totalPuzzles) {
             // FINALLY, notify the Game Manager
             Debug.Log("Notify Game Manager");
-    		SceneManager.LoadScene("EndScene");
+    		SceneManager.LoadScene("GoodEnding");
 
             //GameManager.Instance.HandleAllPuzzlesClear();
         }

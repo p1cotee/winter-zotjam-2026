@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     public bool LookCenter = true;
     public bool MoveDown = false;
 
+    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,13 +36,19 @@ public class Player : MonoBehaviour
                 MoveDown = true;
 
                 Debug.Log(_camera.transform.position);
-
-
             }
+            /*
             //strech goal, left and right look
             if (Input.GetKeyDown(KeyCode.A))
             {
 
+            }
+            */
+
+            //blink
+            if (Input.GetKeyDown(KeyCode.Space)||Input.GetMouseButtonDown(0))
+            {
+                Blink();
             }
         }
 
@@ -57,11 +65,9 @@ public class Player : MonoBehaviour
                 MoveDown = false;
             }
         }
-        
-        
-
     }
 
+    //chekcing for camera movement (i need to put it here cuz lerp is frame dependent)
     void LateUpdate()
     {
         if (MoveDown == true)
@@ -75,8 +81,7 @@ public class Player : MonoBehaviour
             else
             {
                 CameraMovement(_camera.transform.position, _cameraTransformDown);
-            }
-            
+            } 
         }
 
         if (MoveDown == false)
@@ -92,8 +97,6 @@ public class Player : MonoBehaviour
                 CameraMovement(_camera.transform.position, _cameraTransformCenter.position);
             }
         }
-         
-
     }
 
     //camera movement lerp function 
@@ -103,5 +106,15 @@ public class Player : MonoBehaviour
             original, 
             target, 
             _cameraMoveSpeed * Time.deltaTime);
+    }
+
+    public void Blink() //make it an event
+    {
+        //reset the timer
+        //clear the blur filter
+        //plus 1 to the blink counter
+        //play blink sfx
+        //play blink animation
+        Debug.Log("blinked");
     }
 }

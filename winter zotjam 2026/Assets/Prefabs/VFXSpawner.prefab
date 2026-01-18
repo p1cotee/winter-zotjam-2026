@@ -47,3 +47,5 @@ MonoBehaviour:
   countTime: 2
   currentTime: 0
   vfxPrefab: {fileID: 3037764116644516319, guid: b6814ea00e560ae4da496c78f5e2230d, type: 3}
+  bubbleVFXPrefab: {fileID: 1293407813308941345, guid: c4349cb82ef37f949a7e97bfba470e72, type: 3}
+  shinyVFXPrefab: {fileID: 3364965796746125103, guid: 0025a9032464be248b545610522ca79a, type: 3}

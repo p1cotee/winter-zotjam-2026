@@ -6,7 +6,10 @@ public class TasklistManager : MonoBehaviour
     public GameObject[] crossoutLines;
     void Start()
     {
-        
+        for(int i = 0; i < 5; i++)
+        {
+            crossoutLines[i].SetActive(false);
+        }
     }
 
     void Update()
@@ -28,12 +31,12 @@ public class TasklistManager : MonoBehaviour
 
         if(puzzleManager.puzzlesFinished == 4)
         {
-            crossoutLines[2].SetActive(true);
+            crossoutLines[3].SetActive(true);
         }
 
         if(puzzleManager.puzzlesFinished == 5)
         {
-            crossoutLines[3].SetActive(true);
+            crossoutLines[4].SetActive(true);
         }
     }
 }

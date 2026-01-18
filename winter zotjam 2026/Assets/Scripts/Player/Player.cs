@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Numerics;
 using UnityEngine;
 
@@ -7,12 +8,14 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform _cameraTransformCenter;
     [SerializeField] private UnityEngine.Vector3 _cameraTransformDown;
     [SerializeField] private float _cameraMoveSpeed = 5f;
+    [SerializeField] private float _blinkCoolDown = 2f;
 
 
     public bool IsDown = false;
     public bool LookCenter = true;
     public bool MoveDown = false;
     public bool IsBlinking = false;
+    private bool _blinkIsCooling = false;
 
     public static Player Instance {get; private set;} //make player as a singleton
     public delegate void EmptyDelegate();//this is the delegate
@@ -88,12 +91,21 @@ public class Player : MonoBehaviour
 
     void Update()//okay unity i actually hate you for this
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !IsBlinking)
+        if (Input.GetKeyDown(KeyCode.Space) && !IsBlinking && !_blinkIsCooling)
         {
             IsBlinking = true;
             Blink();
+            StartCoroutine(BlinkCooldown());
 
         }
+    }
+
+    IEnumerator BlinkCooldown()
+    {
+        _blinkIsCooling = true;
+        yield return new WaitForSeconds(_blinkCoolDown); //1 second cooldown
+        _blinkIsCooling = false;
+        Debug.Log("blink cooldown ended");
     }
 
     //chekcing for camera movement (i need to put it here cuz lerp is frame dependent)

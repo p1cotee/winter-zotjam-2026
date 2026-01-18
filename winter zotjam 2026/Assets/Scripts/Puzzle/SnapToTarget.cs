@@ -8,6 +8,12 @@ public class SnapToTarget : MonoBehaviour
     private Vector3 offset;
     private bool isSnapped = false;
 
+    private PuzzlePiece puzzlePiece;
+
+    void Start() {
+        puzzlePiece = GetComponent<PuzzlePiece>();
+    }
+
     void OnMouseDown()
     {
         if (isSnapped) return;
@@ -28,8 +34,12 @@ public class SnapToTarget : MonoBehaviour
         if (Vector2.Distance(transform.position, targetPoint.position) <= snapDistance)
         {
             isSnapped = true;
+            if (puzzlePiece != null)
+            {
+                puzzlePiece.SnapIntoPlace();
+            }
             Debug.Log("SNAPPED");
-            return; // IMPORTANT: stop dragging THIS frame
+            return; 
         }
     }
 
@@ -37,7 +47,7 @@ public class SnapToTarget : MonoBehaviour
     {
         if (isSnapped)
         {
-            transform.position = targetPoint.position; // force snap every frame
+            transform.position = targetPoint.position; 
         }
     }
 

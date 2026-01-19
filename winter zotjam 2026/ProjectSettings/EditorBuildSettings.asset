@@ -15,20 +15,20 @@ EditorBuildSettings:
     path: Assets/Scenes/IntroComic.unity
     guid: 9640d616c1a5d41fe867da74f675d5e5
   - enabled: 1
-    path: Assets/Scenes/Puzzle.unity
-    guid: 23d7c66c4139c1e41834571af30858dd
-  - enabled: 1
-    path: Assets/Scenes/GoodEnding.unity
-    guid: 521bca678122ef14c85fef4c9769ca05
+    path: Assets/Scenes/Tutorial.unity
+    guid: 93c7a2eba3e6f8141a2f8db0d7f394fd
   - enabled: 1
     path: Assets/Scenes/Classroom.unity
     guid: b2e317523b85baf42afe7d78ed4b84e3
   - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: 93c7a2eba3e6f8141a2f8db0d7f394fd
+    path: Assets/Scenes/GoodEnding.unity
+    guid: 521bca678122ef14c85fef4c9769ca05
   - enabled: 1
     path: Assets/Scenes/BadEnding.unity
     guid: 3768277e53b72694f92ae4d592ca2ba4
+  - enabled: 0
+    path: Assets/Scenes/Puzzle.unity
+    guid: 23d7c66c4139c1e41834571af30858dd
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

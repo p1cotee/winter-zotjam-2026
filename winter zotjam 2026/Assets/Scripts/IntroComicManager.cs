@@ -13,7 +13,7 @@ public class IntroComicManager : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        introComic.transform.position = new Vector3(14.22f, -10.58f, 0);
+        introComic.transform.position = new Vector3(14.22f, -11.08f, 0);
         introComic.transform.localScale = new Vector3(2.8f, 2.8f, 1);
         StartCoroutine(playIntroComic());
     }
@@ -43,18 +43,18 @@ public class IntroComicManager : MonoBehaviour
         Vector3 endPos1 = new Vector3(14.22f, 11.13f, 0f);
         Vector3 scale1 = new Vector3(2.8f, 2.8f, 1);
 
-        Vector3 endPos2 = new Vector3(-1.79f, -13.99f, 0f);
+        Vector3 endPos2 = new Vector3(-0.74f, -13.99f, 0f);
         Vector3 scale2 = new Vector3(3.3f, 3.3f, 1);
         
-        Vector3 endPos3 = new Vector3(-1.79f, -9.39f, 0f);
-        Vector3 endPos4 = new Vector3(-1.79f, -4.57f, 0f);
-        Vector3 endPos5 = new Vector3(-1.79f, 2.11f, 0f);
-        Vector3 endPos6 = new Vector3(-1.79f, 9.84f, 0f);
+        Vector3 endPos3 = new Vector3(-0.74f, -10.46f, 0f);
+        Vector3 endPos4 = new Vector3(-0.74f, -3.2f, 0f);
+        Vector3 endPos5 = new Vector3(-0.74f, 3.87f, 0f);
+        Vector3 endPos6 = new Vector3(-0.74f, 12.5f, 0f);
 
         Vector3 scale3 = new Vector3(2.85f, 2.85f, 1);
-        Vector3 endPos7 = new Vector3(-13.84f, -11f, 0f);
-        Vector3 endPos8 = new Vector3(-13.84f, -4.3f, 0f);
-        Vector3 endPos9 = new Vector3(-13.84f, 7.82f, 0f);
+        Vector3 endPos7 = new Vector3(-14.6f, -11f, 0f);
+        Vector3 endPos8 = new Vector3(-14.6f, -3.08f, 0f);
+        Vector3 endPos9 = new Vector3(-14.6f, 10.41f, 0f);
 
         
         yield return new WaitForSeconds(1);
@@ -101,7 +101,7 @@ public class IntroComicManager : MonoBehaviour
 
         StartCoroutine(playAudio(new AudioClip[] {lines[9], lines[10] }));
         yield return StartCoroutine(
-            waitThenPan(scale3, 7, endPos9, 8)
+            waitThenPan(scale3, 7, endPos9, 1)
         );
 
         SceneManager.LoadScene("Tutorial");

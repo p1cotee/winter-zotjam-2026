@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Numerics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class Player : MonoBehaviour
     public static Player Instance {get; private set;} //make player as a singleton
     public delegate void EmptyDelegate();//this is the delegate
     public event EmptyDelegate OnBlink; //this is the blink event
+
 
     public int blinkCount = 0;
     public int PlayerHP = 2; //total hp
@@ -102,6 +104,10 @@ public class Player : MonoBehaviour
             Blink();
             StartCoroutine(BlinkCooldown());
 
+        }
+        if (PlayerHP <= 0)
+        {
+            SceneManager.LoadScene("BadEnding");
         }
     }
 
@@ -188,6 +194,7 @@ public class Player : MonoBehaviour
             _caughtSfx.Play();
             Debug.Log("Player got caught! Remaining HP: " + PlayerHP);
             HealthUI.Instance.UpdateHealth(PlayerHP);
+            
         }
 
         else

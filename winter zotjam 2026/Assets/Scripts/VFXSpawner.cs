@@ -16,6 +16,8 @@ public class VFXSpawner : MonoBehaviour
     public GameObject eyelid;
 
     public bool blinkAnimation = false;
+    public Vector3 blinkTargetPosition = new Vector3(0, 0, 0);
+    public Vector3 blinkStartPosition = new Vector3(0, 12, 0);
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -45,9 +47,6 @@ public class VFXSpawner : MonoBehaviour
             RandomSpawn();
             ResetTimer();
         }
-
-
-
     }
 
     public void ResetTimer()
@@ -95,9 +94,9 @@ public class VFXSpawner : MonoBehaviour
 
     void LateUpdate()
     {
-        if (blinkAnimation && UnityEngine.Vector3.Distance(eyelid.transform.position, new Vector3(0, 0, 0)) < 0.1f)
+        if (blinkAnimation && UnityEngine.Vector3.Distance(eyelid.transform.position, blinkTargetPosition) < 0.1f)
             {
-                eyelid.transform.position = new Vector3(0, 12, 0);
+                eyelid.transform.position = blinkStartPosition;
                 blinkAnimation = false;
                 return;
             }
@@ -114,7 +113,7 @@ public class VFXSpawner : MonoBehaviour
     {
         eyelid.transform.position = UnityEngine.Vector3.Lerp(
             eyelid.transform.position,
-            new Vector3(0, 0, 0),
+            blinkTargetPosition,
             5f * Time.deltaTime);
     
     }

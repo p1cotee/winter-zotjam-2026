@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 93c7a2eba3e6f8141a2f8db0d7f394fd
+  - enabled: 1
+    path: Assets/Scenes/BadEnding.unity
+    guid: 3768277e53b72694f92ae4d592ca2ba4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

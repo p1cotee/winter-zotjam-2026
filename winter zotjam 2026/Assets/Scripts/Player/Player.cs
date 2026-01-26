@@ -2,9 +2,16 @@ using System.Collections;
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class Player : MonoBehaviour
 {
+    private enum PauseType
+    {
+        CameraShake,
+        SceneChange
+    }
+
     [SerializeField] private GameObject _camera;
     [SerializeField] private Transform _cameraTransformCenter;
     [SerializeField] private UnityEngine.Vector3 _cameraTransformDown;
@@ -105,9 +112,15 @@ public class Player : MonoBehaviour
             StartCoroutine(BlinkCooldown());
 
         }
-        if (PlayerHP <= 0)
+        
+
+        //check if crush is looking
+        if (crushManager.isLookingAtPlayer == true)
         {
-            SceneManager.LoadScene("BadEnding");
+            if (LookCenter==true)
+            {
+                GotCaught();
+            }
         }
     }
 
@@ -184,24 +197,49 @@ public class Player : MonoBehaviour
         _headTurnSfx.Play();
     }
 
-    public void GotCaught(bool isLookingAtPlayer) //got caught looking
+    public void GotCaught() //got caught looking
     {
         //hp -1
         //play caught sfx
-        if (isLookingAtPlayer && LookCenter) //crush is looking back, and player didnt look away
+        if (LookCenter) //crush is looking back, and player didnt look away
         {
+            crushManager.isLookingAtPlayer = false; //reset crush look state
             PlayerHP -= 1;
-            _caughtSfx.Play();
-            Debug.Log("Player got caught! Remaining HP: " + PlayerHP);
-            HealthUI.Instance.UpdateHealth(PlayerHP);
-            
-        }
+            _camera.GetComponent<Camera>().DOShakePosition(0.7f, 0.3f); //shake camera
 
+            StartCoroutine(CoolDown(PauseType.CameraShake)); //wait for camera shake
+            _caughtSfx.Play();
+            
+
+            Debug.Log("Player got caught! Remaining HP: " + PlayerHP);
+
+            HealthUI.Instance.UpdateHealth(PlayerHP);//update health ui
+
+            if (PlayerHP <= 0)
+            {
+                StartCoroutine(CoolDown(PauseType.SceneChange)); //pauses before scene change
+                SceneManager.LoadScene("BadEnding");
+            }
+        }
         else
         {
             return;
         }
-        
-
     }
+
+    //im lazy so i made a generic cooldown coroutine with enum
+    IEnumerator CoolDown(PauseType pauseType)
+    {
+       switch (pauseType)
+        {
+            case PauseType.CameraShake:
+                yield return new WaitForSeconds(1f); //wait for camera shake to finish
+                break;
+
+            case PauseType.SceneChange:
+                yield return new WaitForSeconds(2f); //wait before scene change
+                break;
+        }
+    }
+    
 }

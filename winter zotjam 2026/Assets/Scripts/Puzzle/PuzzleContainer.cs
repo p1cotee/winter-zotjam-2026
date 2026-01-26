@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections; // Required for Coroutines
-
+using DG.Tweening;
+using System.Numerics;
 public class PuzzleContainer : MonoBehaviour
 {
     public bool isComplete = false;
@@ -45,6 +46,7 @@ public class PuzzleContainer : MonoBehaviour
 
         // 1. Show the jigsaw image
         if (completionImage != null) completionImage.SetActive(true);
+        
 
         // 2. Notify the manager immediately (so it can track progress)
         if (puzzleManager != null) puzzleManager.OnPuzzleFinished(this);

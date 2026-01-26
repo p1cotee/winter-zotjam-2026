@@ -1050,7 +1050,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1507539614}
         m_TargetAssemblyTypeName: EndingManager, Assembly-CSharp
-        m_MethodName: OnHomeClick
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

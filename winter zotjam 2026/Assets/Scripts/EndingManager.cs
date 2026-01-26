@@ -8,6 +8,6 @@ public class EndingManager : MonoBehaviour
 	}
 
 	public void OnClick() {
-        SceneManager.LoadScene("IntroScene");
+        SceneManager.LoadScene("Tutorial");
 	}
 }
